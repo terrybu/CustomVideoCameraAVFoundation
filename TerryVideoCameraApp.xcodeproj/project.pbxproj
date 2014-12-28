@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C72E66DB1A506DB500C3C2A4 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E66DA1A506DB500C3C2A4 /* PlayViewController.m */; };
+		C72E66E11A506E9B00C3C2A4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E66E01A506E9B00C3C2A4 /* HomeViewController.m */; };
+		C7B0F2141A4F324E00D008F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B0F2131A4F324E00D008F9 /* main.m */; };
+		C7B0F2171A4F324E00D008F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B0F2161A4F324E00D008F9 /* AppDelegate.m */; };
+		C7B0F21D1A4F324E00D008F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B0F21B1A4F324E00D008F9 /* Main.storyboard */; };
+		C7B0F21F1A4F324E00D008F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B0F21E1A4F324E00D008F9 /* Images.xcassets */; };
+		C7B0F2221A4F324E00D008F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B0F2201A4F324E00D008F9 /* LaunchScreen.xib */; };
+		C7B0F22E1A4F324E00D008F9 /* TerryVideoCameraAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B0F22D1A4F324E00D008F9 /* TerryVideoCameraAppTests.m */; };
+		C7B0F2381A4F411300D008F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B0F2371A4F411300D008F9 /* AVFoundation.framework */; };
+		C7B0F23E1A4F416D00D008F9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B0F2391A4F416D00D008F9 /* AssetsLibrary.framework */; };
+		C7B0F23F1A4F416D00D008F9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B0F23A1A4F416D00D008F9 /* CoreMedia.framework */; };
+		C7B0F2401A4F416D00D008F9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B0F23B1A4F416D00D008F9 /* MediaPlayer.framework */; };
+		C7B0F2411A4F416D00D008F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B0F23C1A4F416D00D008F9 /* MobileCoreServices.framework */; };
+		C7B0F2421A4F416D00D008F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B0F23D1A4F416D00D008F9 /* QuartzCore.framework */; };
+		C7D85B3B1A50BC51003FFB28 /* VideoThumbCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D85B3A1A50BC51003FFB28 /* VideoThumbCell.m */; };
+		C7D85B3E1A50C875003FFB28 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D85B3D1A50C875003FFB28 /* Video.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7B0F2281A4F324E00D008F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B0F2061A4F324E00D008F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B0F20D1A4F324E00D008F9;
+			remoteInfo = TerryVideoCameraApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C72E66D91A506DB500C3C2A4 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		C72E66DA1A506DB500C3C2A4 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		C72E66DF1A506E9B00C3C2A4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C72E66E01A506E9B00C3C2A4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C7B0F20E1A4F324E00D008F9 /* TerryVideoCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerryVideoCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B0F2121A4F324E00D008F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B0F2131A4F324E00D008F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7B0F2151A4F324E00D008F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7B0F2161A4F324E00D008F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7B0F21C1A4F324E00D008F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7B0F21E1A4F324E00D008F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C7B0F2211A4F324E00D008F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C7B0F2271A4F324E00D008F9 /* TerryVideoCameraAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerryVideoCameraAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B0F22C1A4F324E00D008F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B0F22D1A4F324E00D008F9 /* TerryVideoCameraAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TerryVideoCameraAppTests.m; sourceTree = "<group>"; };
+		C7B0F2371A4F411300D008F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C7B0F2391A4F416D00D008F9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C7B0F23A1A4F416D00D008F9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C7B0F23B1A4F416D00D008F9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C7B0F23C1A4F416D00D008F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C7B0F23D1A4F416D00D008F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C7D85B391A50BC51003FFB28 /* VideoThumbCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoThumbCell.h; sourceTree = "<group>"; };
+		C7D85B3A1A50BC51003FFB28 /* VideoThumbCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoThumbCell.m; sourceTree = "<group>"; };
+		C7D85B3C1A50C875003FFB28 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		C7D85B3D1A50C875003FFB28 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7B0F20B1A4F324E00D008F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B0F23E1A4F416D00D008F9 /* AssetsLibrary.framework in Frameworks */,
+				C7B0F23F1A4F416D00D008F9 /* CoreMedia.framework in Frameworks */,
+				C7B0F2401A4F416D00D008F9 /* MediaPlayer.framework in Frameworks */,
+				C7B0F2411A4F416D00D008F9 /* MobileCoreServices.framework in Frameworks */,
+				C7B0F2421A4F416D00D008F9 /* QuartzCore.framework in Frameworks */,
+				C7B0F2381A4F411300D008F9 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B0F2241A4F324E00D008F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7B0F2051A4F324E00D008F9 = {
+			isa = PBXGroup;
+			children = (
+				C7B0F2391A4F416D00D008F9 /* AssetsLibrary.framework */,
+				C7B0F23A1A4F416D00D008F9 /* CoreMedia.framework */,
+				C7B0F23B1A4F416D00D008F9 /* MediaPlayer.framework */,
+				C7B0F23C1A4F416D00D008F9 /* MobileCoreServices.framework */,
+				C7B0F23D1A4F416D00D008F9 /* QuartzCore.framework */,
+				C7B0F2371A4F411300D008F9 /* AVFoundation.framework */,
+				C7B0F2101A4F324E00D008F9 /* TerryVideoCameraApp */,
+				C7B0F22A1A4F324E00D008F9 /* TerryVideoCameraAppTests */,
+				C7B0F20F1A4F324E00D008F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7B0F20F1A4F324E00D008F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7B0F20E1A4F324E00D008F9 /* TerryVideoCameraApp.app */,
+				C7B0F2271A4F324E00D008F9 /* TerryVideoCameraAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7B0F2101A4F324E00D008F9 /* TerryVideoCameraApp */ = {
+			isa = PBXGroup;
+			children = (
+				C7B0F2151A4F324E00D008F9 /* AppDelegate.h */,
+				C7B0F2161A4F324E00D008F9 /* AppDelegate.m */,
+				C72E66DF1A506E9B00C3C2A4 /* HomeViewController.h */,
+				C72E66E01A506E9B00C3C2A4 /* HomeViewController.m */,
+				C7D85B3C1A50C875003FFB28 /* Video.h */,
+				C7D85B3D1A50C875003FFB28 /* Video.m */,
+				C72E66D91A506DB500C3C2A4 /* PlayViewController.h */,
+				C72E66DA1A506DB500C3C2A4 /* PlayViewController.m */,
+				C7B0F21B1A4F324E00D008F9 /* Main.storyboard */,
+				C7D85B391A50BC51003FFB28 /* VideoThumbCell.h */,
+				C7D85B3A1A50BC51003FFB28 /* VideoThumbCell.m */,
+				C7B0F21E1A4F324E00D008F9 /* Images.xcassets */,
+				C7B0F2201A4F324E00D008F9 /* LaunchScreen.xib */,
+				C7B0F2111A4F324E00D008F9 /* Supporting Files */,
+			);
+			path = TerryVideoCameraApp;
+			sourceTree = "<group>";
+		};
+		C7B0F2111A4F324E00D008F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7B0F2121A4F324E00D008F9 /* Info.plist */,
+				C7B0F2131A4F324E00D008F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7B0F22A1A4F324E00D008F9 /* TerryVideoCameraAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7B0F22D1A4F324E00D008F9 /* TerryVideoCameraAppTests.m */,
+				C7B0F22B1A4F324E00D008F9 /* Supporting Files */,
+			);
+			path = TerryVideoCameraAppTests;
+			sourceTree = "<group>";
+		};
+		C7B0F22B1A4F324E00D008F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7B0F22C1A4F324E00D008F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7B0F20D1A4F324E00D008F9 /* TerryVideoCameraApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B0F2311A4F324E00D008F9 /* Build configuration list for PBXNativeTarget "TerryVideoCameraApp" */;
+			buildPhases = (
+				C7B0F20A1A4F324E00D008F9 /* Sources */,
+				C7B0F20B1A4F324E00D008F9 /* Frameworks */,
+				C7B0F20C1A4F324E00D008F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TerryVideoCameraApp;
+			productName = TerryVideoCameraApp;
+			productReference = C7B0F20E1A4F324E00D008F9 /* TerryVideoCameraApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7B0F2261A4F324E00D008F9 /* TerryVideoCameraAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B0F2341A4F324E00D008F9 /* Build configuration list for PBXNativeTarget "TerryVideoCameraAppTests" */;
+			buildPhases = (
+				C7B0F2231A4F324E00D008F9 /* Sources */,
+				C7B0F2241A4F324E00D008F9 /* Frameworks */,
+				C7B0F2251A4F324E00D008F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7B0F2291A4F324E00D008F9 /* PBXTargetDependency */,
+			);
+			name = TerryVideoCameraAppTests;
+			productName = TerryVideoCameraAppTests;
+			productReference = C7B0F2271A4F324E00D008F9 /* TerryVideoCameraAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7B0F2061A4F324E00D008F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = TerryBuOrg;
+				TargetAttributes = {
+					C7B0F20D1A4F324E00D008F9 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = JJ62WG39RU;
+					};
+					C7B0F2261A4F324E00D008F9 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = JJ62WG39RU;
+						TestTargetID = C7B0F20D1A4F324E00D008F9;
+					};
+				};
+			};
+			buildConfigurationList = C7B0F2091A4F324E00D008F9 /* Build configuration list for PBXProject "TerryVideoCameraApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7B0F2051A4F324E00D008F9;
+			productRefGroup = C7B0F20F1A4F324E00D008F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7B0F20D1A4F324E00D008F9 /* TerryVideoCameraApp */,
+				C7B0F2261A4F324E00D008F9 /* TerryVideoCameraAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7B0F20C1A4F324E00D008F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B0F21D1A4F324E00D008F9 /* Main.storyboard in Resources */,
+				C7B0F2221A4F324E00D008F9 /* LaunchScreen.xib in Resources */,
+				C7B0F21F1A4F324E00D008F9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B0F2251A4F324E00D008F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7B0F20A1A4F324E00D008F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72E66DB1A506DB500C3C2A4 /* PlayViewController.m in Sources */,
+				C7B0F2171A4F324E00D008F9 /* AppDelegate.m in Sources */,
+				C7B0F2141A4F324E00D008F9 /* main.m in Sources */,
+				C72E66E11A506E9B00C3C2A4 /* HomeViewController.m in Sources */,
+				C7D85B3B1A50BC51003FFB28 /* VideoThumbCell.m in Sources */,
+				C7D85B3E1A50C875003FFB28 /* Video.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B0F2231A4F324E00D008F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B0F22E1A4F324E00D008F9 /* TerryVideoCameraAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7B0F2291A4F324E00D008F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7B0F20D1A4F324E00D008F9 /* TerryVideoCameraApp */;
+			targetProxy = C7B0F2281A4F324E00D008F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7B0F21B1A4F324E00D008F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B0F21C1A4F324E00D008F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7B0F2201A4F324E00D008F9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B0F2211A4F324E00D008F9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7B0F22F1A4F324E00D008F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7B0F2301A4F324E00D008F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7B0F2321A4F324E00D008F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TerryVideoCameraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C7B0F2331A4F324E00D008F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TerryVideoCameraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		C7B0F2351A4F324E00D008F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TerryVideoCameraAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TerryVideoCameraApp.app/TerryVideoCameraApp";
+			};
+			name = Debug;
+		};
+		C7B0F2361A4F324E00D008F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TerryVideoCameraAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TerryVideoCameraApp.app/TerryVideoCameraApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7B0F2091A4F324E00D008F9 /* Build configuration list for PBXProject "TerryVideoCameraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B0F22F1A4F324E00D008F9 /* Debug */,
+				C7B0F2301A4F324E00D008F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B0F2311A4F324E00D008F9 /* Build configuration list for PBXNativeTarget "TerryVideoCameraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B0F2321A4F324E00D008F9 /* Debug */,
+				C7B0F2331A4F324E00D008F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B0F2341A4F324E00D008F9 /* Build configuration list for PBXNativeTarget "TerryVideoCameraAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B0F2351A4F324E00D008F9 /* Debug */,
+				C7B0F2361A4F324E00D008F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7B0F2061A4F324E00D008F9 /* Project object */;
+}
