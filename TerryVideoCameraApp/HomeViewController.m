@@ -13,6 +13,7 @@
 #import "Video.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/UTCoreTypes.h>
+#import "PlayViewController.h"
 
 @interface HomeViewController () {
   
@@ -135,9 +136,10 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+  NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
+  NSIndexPath* index = indexPaths[0];
+  PlayViewController *destViewController = segue.destinationViewController;
+  destViewController.video = self.videos[index.row];
 }
 
 

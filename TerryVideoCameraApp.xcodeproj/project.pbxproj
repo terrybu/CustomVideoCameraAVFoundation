@@ -23,6 +23,7 @@
 		C7B0F2421A4F416D00D008F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B0F23D1A4F416D00D008F9 /* QuartzCore.framework */; };
 		C7D85B3B1A50BC51003FFB28 /* VideoThumbCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D85B3A1A50BC51003FFB28 /* VideoThumbCell.m */; };
 		C7D85B3E1A50C875003FFB28 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D85B3D1A50C875003FFB28 /* Video.m */; };
+		C7D85B411A50D413003FFB28 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D85B401A50D413003FFB28 /* PlayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		C7D85B3A1A50BC51003FFB28 /* VideoThumbCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoThumbCell.m; sourceTree = "<group>"; };
 		C7D85B3C1A50C875003FFB28 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		C7D85B3D1A50C875003FFB28 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		C7D85B3F1A50D413003FFB28 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		C7D85B401A50D413003FFB28 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				C7D85B3D1A50C875003FFB28 /* Video.m */,
 				C72E66D91A506DB500C3C2A4 /* PlayViewController.h */,
 				C72E66DA1A506DB500C3C2A4 /* PlayViewController.m */,
+				C7D85B3F1A50D413003FFB28 /* PlayerView.h */,
+				C7D85B401A50D413003FFB28 /* PlayerView.m */,
 				C7B0F21B1A4F324E00D008F9 /* Main.storyboard */,
 				C7D85B391A50BC51003FFB28 /* VideoThumbCell.h */,
 				C7D85B3A1A50BC51003FFB28 /* VideoThumbCell.m */,
@@ -261,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C72E66DB1A506DB500C3C2A4 /* PlayViewController.m in Sources */,
+				C7D85B411A50D413003FFB28 /* PlayerView.m in Sources */,
 				C7B0F2171A4F324E00D008F9 /* AppDelegate.m in Sources */,
 				C7B0F2141A4F324E00D008F9 /* main.m in Sources */,
 				C72E66E11A506E9B00C3C2A4 /* HomeViewController.m in Sources */,
