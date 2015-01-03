@@ -44,6 +44,7 @@ static const NSString *ItemStatusContext;
                                                                      name:AVPlayerItemDidPlayToEndTimeNotification
                                                                    object:self.playerItem];
                         self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
+                        
                         [self.playerView setPlayer:self.player];
                       }
                       else {

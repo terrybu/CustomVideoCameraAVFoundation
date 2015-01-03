@@ -9,11 +9,12 @@
 #import "HomeViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <AVFoundation/AVFoundation.h>
-#import "VideoThumbCell.h"
-#import "Video.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/UTCoreTypes.h>
+#import "VideoThumbCell.h"
+#import "Video.h"
 #import "PlayViewController.h"
+#import "SlowMotionRecordViewController.h"
 
 @interface HomeViewController () {
   
@@ -38,7 +39,6 @@
   library = [[ALAssetsLibrary alloc] init];
   
   [self findVideosMakeThumbsAddThemToDataArray];
-  
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -136,12 +136,45 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
-  NSIndexPath* index = indexPaths[0];
-  PlayViewController *destViewController = segue.destinationViewController;
-  destViewController.video = self.videos[index.row];
+  if ([[segue identifier] isEqualToString:@"playSegue"]) {
+    NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
+    NSIndexPath* index = indexPaths[0];
+    PlayViewController *destViewController = segue.destinationViewController;
+    destViewController.video = self.videos[index.row];
+  }
 }
 
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+  NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
+  [self dismissViewControllerAnimated:NO completion:nil];
+  // Handle a movie capture
+  if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
+    NSString *moviePath = [[info objectForKey:UIImagePickerControllerMediaURL] path];
+    if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(moviePath)) {
+      UISaveVideoAtPathToSavedPhotosAlbum(moviePath, self,
+                                          @selector(video:didFinishSavingWithError:contextInfo:), nil);
+    }
+  }
+}
+
+-(void)video:(NSString*)videoPath didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo {
+  if (error) {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Video Saving Failed"
+                                                   delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  } else {
+    [self findVideosMakeThumbsAddThemToDataArray];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Video Saved" message:@"Saved To Photo Album"
+                                                   delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }
+}
+
+- (IBAction)recordRegularButton:(id)sender {
+  [self startCameraControllerFromViewController:self usingDelegate:self];
+  
+}
 
 
 -(BOOL)startCameraControllerFromViewController:(UIViewController*)controller
@@ -165,41 +198,6 @@
   [controller presentViewController:cameraUI animated:YES completion:nil];
   return YES;
 }
-
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-  NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
-  [self dismissViewControllerAnimated:NO completion:nil];
-  // Handle a movie capture
-  if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
-    NSString *moviePath = [[info objectForKey:UIImagePickerControllerMediaURL] path];
-    if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(moviePath)) {
-      UISaveVideoAtPathToSavedPhotosAlbum(moviePath, self,
-                                          @selector(video:didFinishSavingWithError:contextInfo:), nil);
-    }
-  }
-}
-
--(void)video:(NSString*)videoPath didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo {
-  if (error) {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Video Saving Failed"
-                                                   delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-  } else {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Video Saved" message:@"Saved To Photo Album"
-                                                   delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-  }
-}
-
-- (IBAction)recordRegularButton:(id)sender {
-  [self startCameraControllerFromViewController:self usingDelegate:self];
-  
-}
-
-- (IBAction)recordSlowMoButton:(id)sender {
-  
-}
-
 
 
 

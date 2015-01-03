@@ -7,25 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AVCaptureManager.h"
 
 
 @interface HomeViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
-
-
-
 -(BOOL)startCameraControllerFromViewController:(UIViewController*)controller
                                  usingDelegate:(id )delegate;
 
 -(void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void*)contextInfo;
 
-
-
 - (IBAction)recordRegularButton:(id)sender;
-- (IBAction)recordSlowMoButton:(id)sender;
-
 
 
 @end

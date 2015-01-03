@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C72E66DB1A506DB500C3C2A4 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E66DA1A506DB500C3C2A4 /* PlayViewController.m */; };
 		C72E66E11A506E9B00C3C2A4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E66E01A506E9B00C3C2A4 /* HomeViewController.m */; };
+		C79C55DC1A5789F800355EA1 /* AVCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C55DB1A5789F800355EA1 /* AVCaptureManager.m */; };
+		C79C55DF1A578BA200355EA1 /* SlowMotionRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C55DE1A578BA200355EA1 /* SlowMotionRecordViewController.m */; };
 		C7B0F2141A4F324E00D008F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B0F2131A4F324E00D008F9 /* main.m */; };
 		C7B0F2171A4F324E00D008F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B0F2161A4F324E00D008F9 /* AppDelegate.m */; };
 		C7B0F21D1A4F324E00D008F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B0F21B1A4F324E00D008F9 /* Main.storyboard */; };
@@ -41,6 +43,10 @@
 		C72E66DA1A506DB500C3C2A4 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		C72E66DF1A506E9B00C3C2A4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		C72E66E01A506E9B00C3C2A4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C79C55DA1A5789F800355EA1 /* AVCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureManager.h; sourceTree = "<group>"; };
+		C79C55DB1A5789F800355EA1 /* AVCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureManager.m; sourceTree = "<group>"; };
+		C79C55DD1A578BA200355EA1 /* SlowMotionRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlowMotionRecordViewController.h; sourceTree = "<group>"; };
+		C79C55DE1A578BA200355EA1 /* SlowMotionRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlowMotionRecordViewController.m; sourceTree = "<group>"; };
 		C7B0F20E1A4F324E00D008F9 /* TerryVideoCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerryVideoCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B0F2121A4F324E00D008F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7B0F2131A4F324E00D008F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -119,15 +125,19 @@
 			children = (
 				C7B0F2151A4F324E00D008F9 /* AppDelegate.h */,
 				C7B0F2161A4F324E00D008F9 /* AppDelegate.m */,
+				C79C55DA1A5789F800355EA1 /* AVCaptureManager.h */,
+				C79C55DB1A5789F800355EA1 /* AVCaptureManager.m */,
 				C72E66DF1A506E9B00C3C2A4 /* HomeViewController.h */,
 				C72E66E01A506E9B00C3C2A4 /* HomeViewController.m */,
-				C7D85B3C1A50C875003FFB28 /* Video.h */,
-				C7D85B3D1A50C875003FFB28 /* Video.m */,
+				C79C55DD1A578BA200355EA1 /* SlowMotionRecordViewController.h */,
+				C79C55DE1A578BA200355EA1 /* SlowMotionRecordViewController.m */,
 				C72E66D91A506DB500C3C2A4 /* PlayViewController.h */,
 				C72E66DA1A506DB500C3C2A4 /* PlayViewController.m */,
 				C7D85B3F1A50D413003FFB28 /* PlayerView.h */,
 				C7D85B401A50D413003FFB28 /* PlayerView.m */,
 				C7B0F21B1A4F324E00D008F9 /* Main.storyboard */,
+				C7D85B3C1A50C875003FFB28 /* Video.h */,
+				C7D85B3D1A50C875003FFB28 /* Video.m */,
 				C7D85B391A50BC51003FFB28 /* VideoThumbCell.h */,
 				C7D85B3A1A50BC51003FFB28 /* VideoThumbCell.m */,
 				C7B0F21E1A4F324E00D008F9 /* Images.xcassets */,
@@ -266,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C72E66DB1A506DB500C3C2A4 /* PlayViewController.m in Sources */,
+				C79C55DF1A578BA200355EA1 /* SlowMotionRecordViewController.m in Sources */,
 				C7D85B411A50D413003FFB28 /* PlayerView.m in Sources */,
 				C7B0F2171A4F324E00D008F9 /* AppDelegate.m in Sources */,
+				C79C55DC1A5789F800355EA1 /* AVCaptureManager.m in Sources */,
 				C7B0F2141A4F324E00D008F9 /* main.m in Sources */,
 				C72E66E11A506E9B00C3C2A4 /* HomeViewController.m in Sources */,
 				C7D85B3B1A50BC51003FFB28 /* VideoThumbCell.m in Sources */,
@@ -399,6 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -412,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
